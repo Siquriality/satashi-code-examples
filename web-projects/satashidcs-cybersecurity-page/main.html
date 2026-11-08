@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!-- Демонстрационная страница SatashiDCS AI Cybersecurity. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SatashiDcs | AI Cybersecurity</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --primary: #00f5d4;
+    --secondary: #0066ff;
+    --bg: #0b0b15;
+    --card: #151528;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: white;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(15px);
+    background: rgba(10,10,20,0.6);
+    z-index: 1000;
+}
+
+.logo-small {
+    font-weight: 800;
+    font-size: 22px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+/* HERO */
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 8%;
+    position: relative;
+}
+
+.big-logo {
+    font-size: 110px;
+    font-weight: 900;
+    letter-spacing: -3px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 600px;
+    opacity: 0.8;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    padding: 15px 35px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px var(--primary);
+}
+
+/* GLOW BACKGROUND */
+
+.glow {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    filter: blur(140px);
+    opacity: 0.25;
+    z-index: -1;
+}
+
+/* FEATURES */
+
+.section {
+    padding: 120px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 42px;
+    margin-bottom: 60px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+}
+
+.card {
+    background: var(--card);
+    padding: 40px;
+    border-radius: 25px;
+    transition: 0.4s;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary);
+    box-shadow: 0 0 40px rgba(0,245,212,0.2);
+}
+
+/* FOOTER */
+
+footer {
+    padding: 50px;
+    text-align: center;
+    background: #06060f;
+    opacity: 0.7;
+}
+
+/* MOBILE */
+
+@media(max-width: 768px) {
+    .big-logo {
+        font-size: 600000000px;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo-small">SatashiDcs</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Product</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="glow"></div>
+    <div class="big-logo">SatashiDcs</div>
+    <p>
+        AI-powered cybersecurity platform protecting businesses 
+        with real-time threat detection, advanced monitoring, 
+        and next-generation digital defense systems.
+    </p>
+    <a href="#" class="btn">Request Demo</a>
+</section>
+
+<section class="section">
+    <h2>Next-Generation Security</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>AI Threat Detection</h3>
+            <p>Real-time attack prevention powered by machine learning.</p>
+        </div>
+        <div class="card">
+            <h3>Dark Web Monitoring</h3>
+            <p>Continuous scanning for leaked credentials and data breaches.</p>
+        </div>
+        <div class="card">
+            <h3>Infrastructure Audit</h3>
+            <p>Advanced vulnerability scanning and security assessment.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 SatashiDcs — AI Cybersecurity Platform
+</footer>
+
+</body>
+</html>
